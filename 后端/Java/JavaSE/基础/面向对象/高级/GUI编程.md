@@ -1,0 +1,9 @@
+- AWT
+	- 基于操作系统的本地窗口
+- Swing
+	- 基于AWT，不依赖本地窗口
+#### 布局管理器
+- FlowLayout
+- BorderLayout
+- GridLayout
+- BoxLayout

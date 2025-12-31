@@ -1,0 +1,3 @@
+- 基于vue3，组件库
+- npm install ellement-plus
+- main.js引入

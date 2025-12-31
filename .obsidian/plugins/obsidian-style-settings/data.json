@@ -1,0 +1,15 @@
+{
+  "blue-topaz-theme@@folder-style-change-options-colorful-subfolder": "folder-colorful-six",
+  "blue-topaz-theme@@bt-toggle-colorful-folder": true,
+  "blue-topaz-theme@@folder-style-change-options-colorful": "folder-style-change-options-colorful-border",
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-topaz-nord",
+  "blue-topaz-theme@@background-settings-workplace-background-image": true,
+  "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-theme-dark-in-the-sky",
+  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-waves2-light",
+  "blue-topaz-theme@@background-settings-workplace-theme-light-custom": "url(\"https://\"D:\\Mutsuki\\Pictures\\Saved Pictures\\92B291576AC2DCE424261931B740A001.jpg\"\")",
+  "blue-topaz-theme@@tab-title-bar-position": false,
+  "blue-topaz-theme@@remove-heading-indicator": false,
+  "Blue-Topaz-Codebox-Highlight@@background-code@@light": "#FFFFFF",
+  "Blue-Topaz-Codebox-Highlight@@whole-code-wrap": false,
+  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-sublime"
+}

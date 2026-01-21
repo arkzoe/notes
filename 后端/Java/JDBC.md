@@ -1,5 +1,4 @@
-- 接口
-- 数据库厂商实现
+- sun公司提供接口，具体的数据库厂商实现功能
 ```java
 //注册驱动
 Class.forName("com.mysql.jdbc.Dricer");
@@ -10,7 +9,7 @@ String sql = "";
 //获取执行SQL对象
 Statement stmt = conn.createStatement();
 //执行SQL
-stml.executeUpdate(sql);
+stmt.executeUpdate(sql);
 //返回处理结果
 //释放资源
 stmt.close();
@@ -33,7 +32,7 @@ Statement createStatement();
 PreparedStatement prepareStatement(sql);
 
 //执行存储过程的对象
-CallableStatement prepareCall(sql)
+CallableStatement prepareCall(sql);
 ```
 2. 管理事务
 - MySQL事务管理

@@ -46,11 +46,47 @@ msg表示错误提示信息，可以不指定
 	2. 调用Class提供方法：public static Class forName(String package)
 	3. Object提供的方法：public Class getClass();Class c3 = 对象.getClass();
 2. 获取类的构造器：Construcror对象
-![[获取类的构造器.png]]
+
+| 方法                                                                |                                  |
+| ----------------------------------------------------------------- | -------------------------------- |
+| Constructor< ?>[] getconstructors()                               | 说明获取全部构造器（只能获取public修饰的）         |
+| Constructor< ?>[] getDeclaredConstructors()                       | 获取全部构造器（只要存在就能拿到）                |
+| Constructor<T> getconstructor(class< ?>... parameterTypes)        | 获取某个构造器（只能获取public修饰的）           |
+| Constructor<T> getDeclaredconstructor（Class< ?>..：parameterTypes） | 获取某个构造器（只要存在就能拿到）                |
+|                                                                   |                                  |
+| 获取类构造器的作用：初始化对象返回                                                 |                                  |
+| 获Constructor提供的方法                                                 |                                  |
+| T newInstance(object... initargs)                                 | 调用此构造器对象表示的构造器，并传入参数，完成对象的初始化并返回 |
+| public void  setAccessible(boolean flag)                          | 设置为true，表示禁止检查访问控制（暴力反射）         |
+
 3. 获取类的成员变量：Field对象
-![[获取类的成员变量.png]]
+
+| 方法                                                                 |                                  |
+| ------------------------------------------------------------------ | -------------------------------- |
+| Constructor< ?>[] getconstructors()                                | 获取全部构造器（只能获取public修饰的）           |
+| Constructor< ?>[] getDeclaredconstructors()                        | 获取全部构造器（只要存在就能拿到）                |
+| Constructor< T> getConstructor(Class< ?>... parameterTypes)        | 获取某个构造器（只能获取public修饰的）           |
+| Constructor< T> getDeclaredConstructor（class< ?>..·parameterTypes） | 获取某个构造器（只要存在就能拿到）                |
+|                                                                    |                                  |
+| 获取类构造器的作用：依然是初始化对象返回                                               |                                  |
+| Constructor提供的方法                                                   |                                  |
+| T newInstance(object... initargs)                                  | 调用此构造器对象表示的构造器，并传入参数，完成对象的初始化并返回 |
+| public void setAccessible(boolean flag)                            | 设置为true，表示禁止检查访问控制（暴力反射）         |
+
 4. 获取类的成员方法：Method对象
-![[获取类的成员方法.png]]
+
+| 方法                                                                 |                           |
+| ------------------------------------------------------------------ | ------------------------- |
+| Method[] getMethods()                                              | 获取类的全部成员方法（只能获取public修饰的） |
+| Method[] getDeclaredMethods()                                      | 获取类的全部成员方法（只要存在就能拿到）      |
+| Method getMethod(String name, Class< ?>...parameterTypes)          | 获取类的某个成员方法（只能获取public修饰的） |
+| Method getDeclaredMethod(String name, Class< ?>... parameterTypes) | 获取类的某个成员方法（只要存在就能拿到）      |
+|                                                                    |                           |
+| 成员方法的作用：依然是执行                                                      |                           |
+| Method提供的方法                                                        |                           |
+| public Object invoke(object obj, object... args)                   | 触发某个对象的该方法执行              |
+| public void setAccessible(boolean flag)                            | 设置为true，表示禁止检查访问控制（暴力反射）  |
+
 ```java
 //获取类对象
 Class c1 = Dog.class;
@@ -92,14 +128,31 @@ public @interface 注解名称{
 - @注解(...);：实现类对象，实现注解及Annotation接口
 ## 源注解
 - 注解注解的注解
-![[Target注解.png|+grid]]   ![[Retention注解.png|+grid]]
+
+| @Target                   | @Retention                          |
+| ------------------------- | ----------------------------------- |
+| 声明被修饰的注解只能在哪些位置使用         | 明注解的保留周期                            |
+| @Target(ElementType.TYPE) | @Retention(RetentionPolicy.RUNTIME) |
+| 1.TYPE，类，接口               | 1.SOURCE                            |
+| 2.FIELD，成员变量              | 只作用在源码阶段，字节码文件中不存在                  |
+| 3.METHOD，成员方法             | 2.CLASS（默认值）                        |
+| 4.PARAMETER，方法参数          | 保留到字节码文件阶段，运行阶段不存在                  |
+| 5.CONSTRUCTOR，构造器         | 3.RUNTIME（开发常用）                     |
+| 6.LOCAL_VARIABLE，局部变量     | 一直保留到运行阶段                          |
+
 ## 解析注解
 - 判断类上、方法上、成员变量是否存在注解，把注解里的内容解析出来
 ### 如何解析
 - 要解析谁上的注解，就因该先拿到谁
 - 解析类上的，就先获取到类的Class对象，再通过Class对象解析注解
 - Class、Method、Filed、Constructor都有解析注解的能力
-![[解析注解.png]]
+
+| AnnotatedElement接口提供了解析注解的方法                                           |                 |
+| ---------------------------------------------------------------------- | --------------- |
+| public Annotation[] getDeclaredAnnotations()                           | 获取当前对象上面的注解     |
+| public T getDeclaredAnnotation(Class< T> annotationClass)              | 获取指定的注解对象       |
+| public boolean isAnnotationPresent(Class< Annotation> annotationclass) | 判断当前对象上是否存在某个注解 |
+
 ## 作用、应用
 - 注解控制执行，属性控制怎么执行
 # 动态代理

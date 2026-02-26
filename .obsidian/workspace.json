@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端/Java/路线.md",
+                "file": "backend/Spring/SpringCloud/高级/分布式事务.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "路线"
+              "title": "分布式事务"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTimeReverse",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 236.5
   },
   "right": {
     "id": "5153edab7c7abb94",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "后端/Java/路线.md",
+                "file": "backend/Spring/SpringCloud/高级/分布式事务.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "路线 的大纲"
+              "title": "分布式事务 的大纲"
             }
           }
         ],
@@ -172,7 +172,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5
+    "width": 243.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,53 +187,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3bcb3ed69111314d",
+  "active": "87c3ec8ff40aae91",
   "lastOpenFiles": [
-    "后端/Database/MySQL/基础/函数.md",
+    "backend/Spring/SpringCloud/高级/微服务保护.md",
+    "backend/Spring/SpringCloud/高级/分布式缓存.md",
+    "backend/Spring/SpringCloud/高级/分布式事务.md",
+    "backend/Spring/SpringCloud/assets/image-20210718155059371.png",
+    "backend/Spring/SpringCloud/assets/image-20210821115914748.png",
+    "backend/Spring/SpringCloud/assets/image-20210821115948395.png",
+    "backend/Spring/SpringCloud/assets/image-20210821115552327.png",
+    "backend/Spring/SpringCloud/assets/image-20210821114742950.png",
+    "backend/Spring/SpringCloud/assets/image-20210821115108528.png",
+    "backend/Spring/SpringCloud/assets/image-20210821112637430.png",
+    "backend/Spring/SpringCloud/assets/image-20210821112420464.png",
+    "backend/Spring/SpringCloud/assets/image-20210821114528954.png",
+    "backend/Spring/SpringCloud/assets/image-20210821112559965.png",
+    "backend/Spring/SpringCloud/高级/多级缓存.md",
+    "assets/image-20210716154255466.png.md",
+    "assets",
+    "backend/Spring/SpringCloud/SpringCloud.md",
+    "backend/Spring/SpringCloud/高级/RabbitMQ-高级篇.md",
+    "日本語/五十音.md",
+    "backend/Spring/SpringCloud/高级",
+    "backend/Spring/SpringCloud/未命名.md",
+    "backend/Database/Redis/高级.md",
+    "backend/Frontend/ElementPlus.md",
+    "backend/Spring/登录.md",
+    "backend/Spring/异常处理.md",
+    "backend/Spring/日志.md",
+    "backend/Java/路线.md",
+    "backend/Java/JDBC.md",
+    "backend/Java/JavaSE/加强/IO流、File、字符集.md",
+    "backend/Spring/SpringCloud/微服务常见面试题.md",
+    "backend/Spring/SpringCloud/assets",
+    "backend/Spring/SpringCloud",
+    "backend/Database/Redis/原理.md",
+    "img",
+    "backend/Database/Redis/实战.md",
+    "backend/Frontend/TypeScript 极速梳理.pdf",
+    "backend/Frontend/Vue3.md",
+    "(中文机翻)超かぐや姫！+.epub",
+    "backend/Frontend/Ajax.md",
+    "backend/Frontend/Vue.md",
+    "backend/Frontend/未命名.md",
+    "backend/Frontend/images",
+    "Python/基础.md",
+    "backend/Docker/img",
     "后端/数据库/未命名.base",
-    "后端/Database/MySQL/基础/SQL.md",
-    "后端/Database/MySQL/基础/数据类型.md",
-    "后端/数据库/MySQL/基础/img/流程函数.png",
-    "后端/数据库/MySQL/基础/img/数值函数.png",
-    "后端/数据库/MySQL/基础/img/日期函数.png",
-    "后端/数据库/MySQL/基础/img/约束.png",
-    "后端/数据库/MySQL/基础/img/外键删除更新.png",
-    "后端/数据库/MySQL/基础/img/列子查询.png",
-    "后端/数据库/MySQL/基础/img/事务隔离级别.png",
-    "后端/Database/MySQL/基础/约束.md",
-    "后端/Database/MySQL/基础/多表查询.md",
-    "后端/Database/MySQL/基础/事务.md",
-    "后端/数据库/MySQL/基础/SQL/DQL.md",
-    "后端/数据库/MySQL/基础/SQL/DML.md",
-    "后端/数据库/MySQL/基础/SQL/DDL.md",
-    "后端/数据库/MySQL/基础/SQL/DCL.md",
-    "后端/数据库/MySQL/进阶/图片/存储形式分类.png",
-    "后端/Database/MySQL/进阶/img/存储结构.png",
-    "后端/Database/MySQL/进阶/索引.md",
-    "后端/数据库/MySQL/进阶/图片/分类.png",
-    "后端/Database/MySQL/进阶/存储过程.md",
-    "后端/Database/MySQL/进阶/存储引擎.md",
-    "后端/Database/MySQL/进阶/SQL优化.md",
-    "后端/Database/MySQL/进阶/MySQL管理.md",
-    "后端/Database/MySQL/进阶/InnoDB引擎.md",
-    "后端/Database/MySQL/MySQL.md",
-    "后端/Java/JavaSE/加强/异常.md",
-    "后端/Java/JavaSE/加强/泛型.md",
-    "后端/Java/JavaSE/加强/集合.md",
-    "后端/Java/JavaSE/加强/网络编程.md",
-    "后端/Java/JavaSE/加强/多线程.md",
-    "后端/Java/JavaSE/加强/Stream流.md",
-    "后端/Java/JavaSE/加强/Java高级技术.md",
-    "后端/Java/JavaSE/加强/IO流、File、字符集.md",
-    "软件开发通用/Linux/linux.assert",
-    "后端/Database/Redis/img",
-    "原理篇.assets",
-    "后端/数据库/Redis/高级篇/Redis高级篇之最佳实践.assets",
-    "后端/数据库/Redis/原理篇/原理篇.assets",
-    "后端/数据库/Redis/原理篇",
-    "后端/数据库/Redis/新建文件夹",
-    "后端/数据库/Redis/高级篇/assets",
-    "后端/数据库/Redis/高级篇",
     "未命名.canvas"
   ]
 }
